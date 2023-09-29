@@ -32,6 +32,16 @@ const RecommendedSchema =new mongoose.Schema({
    // required: true,
       
   },
+  Categorie:{
+    type:String,
+   // required: true,
+      
+  },
+  SubCategorie:{
+    type:String,
+   // required: true,
+      
+  }
  
 },{
   capped: { size: 97223, max: 50, autoIndexId: true }

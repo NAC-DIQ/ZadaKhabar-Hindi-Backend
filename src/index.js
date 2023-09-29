@@ -10,6 +10,7 @@ const contentroute = require("./routes/zadakhabar.route")
 const CKImgroute = require("./routes/CKEditorImageUpload.route") 
 const SearchBySlugsroute = require("./routes/SearchBySlugs.route")
 const TrendingRoute = require("./routes/trending.route")
+const UpdateRoute = require("./routes/updateAnddelete.route")
 app.use(express.json({limit: '50mb'}));
 //app.use(express.urlencoded({limit: '50mb'}));
 
@@ -17,7 +18,7 @@ app.use("/" ,contentroute)
 app.use("/",CKImgroute)
 app.use("/",SearchBySlugsroute)
 app.use("/",TrendingRoute)
-
+app.use("/",UpdateRoute)
 
 //app.use(cors())
 

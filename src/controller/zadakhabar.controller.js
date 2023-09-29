@@ -15,6 +15,8 @@ exports.setContent = async(req ,res) =>{
       MainImage :Content.Featured_Image,
       Updatedate:Content.Updatedate,
       UpdateTime:Content.UpdateTime,
+      Categorie:Content.Categorie,
+      SubCategorie:Content.SubCategorie,
     })
    await TrendingCont.save().then(() => {
      // res.status(200).send("Sucess")
@@ -34,6 +36,8 @@ exports.setContent = async(req ,res) =>{
       MainImage :Content.Featured_Image,
       Updatedate:Content.Updatedate,
       UpdateTime:Content.UpdateTime,
+      Categorie:Content.Categorie,
+      SubCategorie:Content.SubCategorie,
     })
    await FeaturedCont.save().then(() => {
      // res.status(200).send("Sucess")
@@ -53,6 +57,8 @@ exports.setContent = async(req ,res) =>{
       MainImage :Content.Featured_Image,
       Updatedate:Content.Updatedate,
       UpdateTime:Content.UpdateTime,
+      Categorie:Content.Categorie,
+      SubCategorie:Content.SubCategorie,
     })
    await RecentCont.save().then(() => {
       //res.status(200).send("Sucess")
@@ -71,6 +77,8 @@ exports.setContent = async(req ,res) =>{
       MainImage :Content.Featured_Image,
       Updatedate:Content.Updatedate,
       UpdateTime:Content.UpdateTime,
+      Categorie:Content.Categorie,
+      SubCategorie:Content.SubCategorie,
     })
    await RecommendedCont.save().then(() => {
       //res.status(200).send("Sucess")
